@@ -644,7 +644,7 @@ start:
         ; Rotacion 3
         mov dx, [pos_y]
         add dx, 30
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov cx, [pos_x]
         add cx, 14
@@ -661,7 +661,7 @@ start:
     chk_down_f0_0:
         mov dx, [pos_y]
         add dx, 20
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov cx, [pos_x]
         add cx, 4
@@ -680,7 +680,7 @@ start:
     chk_down_f0_1:
         mov dx, [pos_y]
         add dx, 30
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov cx, [pos_x]
         add cx, 4
@@ -697,7 +697,7 @@ start:
     chk_down_f0_2:
         mov dx, [pos_y]
         add dx, 20
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov dx, [pos_y]
         add dx, 10
@@ -720,7 +720,7 @@ start:
     chk_down_fig1: ; Cuadrado 2x2
         mov dx, [pos_y]
         add dx, 20
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov cx, [pos_x]
         add cx, 4
@@ -739,7 +739,7 @@ start:
         ; Linea Vertical
         mov dx, [pos_y]
         add dx, 40
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov cx, [pos_x]
         add cx, 14
@@ -751,7 +751,7 @@ start:
         ; Linea Horizontal
         mov dx, [pos_y]
         add dx, 30
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov cx, [pos_x]
         add cx, 4
@@ -778,7 +778,7 @@ start:
         ; Z Vertical (figura23): [0,2,0 / 2,2,0 / 2,0,0]
         mov dx, [pos_y]
         add dx, 30          ; Fila 3
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov cx, [pos_x]
         add cx, 4           ; Columna 0
@@ -797,7 +797,7 @@ start:
         ; Z Horizontal (figura13): [2,2,0 / 0,2,2 / 0,0,0]
         mov dx, [pos_y]
         add dx, 20          ; Fila 2
-        cmp dx, 190
+        cmp dx, 200
         jge colision_detectada
         mov cx, [pos_x]
         add cx, 14          ; Columna 1
